@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* NAVEGADOR */
+.navegador {
+    background-color: black;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content:center;
+    z-index: 2;
+    position: fixed;
+    top: 0px;
+    
+}
+.navegador-links {
+    display: flex;
+    gap: 30px;
+}
+.navegador-link a {
+    font-family: "Cinzel";
+    font-size: 20px;
+    display: flex;
+    padding: 50px 5px;
+    color: rgb(199, 151, 178);
+    text-decoration: none;
+}
+.img-logo {
+    width: 120px;
+}
+
+
+/* TITULO | SUBT | PARRAFOS */
+.titulo {
+    font-family: "Cinzel", serif;
+    font-size: 48px;
+    margin: 180px 50px 20px 70px;
+    padding: 5px;
+}
+.subtitle {
+    font-style: italic;
+    font-size: 25px;
+    text-decoration: underline;
+    margin: 20px 50px 20px 80px;
+}
+
+.section-selfie {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.paragraph-one {
+    color: black;
+    font-size: larger;
+    width: 40%;
+    background-color: rgba(199, 188, 194, 0.829);
+    padding: 20px;
+    margin: 50px;
+}
+.img-selfie {
+    width: 300px;
+    border: solid 5px black;
+    margin: 50px;
+    object-fit: cover;
+}
+
+.section-artist {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.paragraph-two {
+    color: black;
+    font-size: larger;
+    width: 40%;
+    background-color: rgb(199, 188, 194, 0.829);
+    padding: 10px;
+    margin: 50px;
+}
+
+
+/* ENLACES RELATIVOS :*/
+.enlaces-relativos {
+    background-color: rgb(199, 151, 178);
+    display: flex;
+    justify-content: center;
+    position: static;
+    margin: 70px;
+}
+.enlaces-principales {
+    font-family: "Cinzel", serif;
+    color: rgb(231, 231, 231);
+    font-size: 20px;
+    display: flex;
+    padding: 15px 15px;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+/* FORMULARIO  ;*/
+.form-section {
+    margin: 70px;
+}
+form {
+    font-size: large;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+
+/* OTRAS PROPIEDADES GENERALES ;*/
+h1 {
+    font-family: "Cinzel", serif;
+    font-size: 42px;
+    color: black;
+}
+
+h3 {
+    text-decoration: underline;
+    text-align: center;
+    font-size: 25px;
+}
+
+.img-sample {
+    width: 70%;
+    border: solid 5px black;
+}
+
+
+
+/* TARJETAS y FLEXBOX  ;*/
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+}
+.tarjeta {
+    width: 300px;
+    background-color: rgba(206, 206, 206, 0.61);
+    padding: 10px;
+    margin: 20px;
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    gap: 20px;
+}
+.tarjeta:hover{
+    background-color: rgb(206, 206, 206);
+}
+.tarjeta-titulo {
+    font-family: "Cinzel", serif;
+    font-size: 15px;
+}
+
+
+.tarjeta-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tarjeta-descripcion {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.boton-primario {
+    width: 80px;
+    height: 40px;
+    background-color: rgba(199, 151, 178, 0.575);
+    color: rgb(2, 2, 2);
+    border: 0px;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -20px;
+    right: 10px;
+}
+.boton-primario:hover{
+    background-color: rgb(199, 151, 178);
+}
+
+/* GRIDS | EN PESTAÑA PORTFOLIO :*/
+.galeria {
+    width: 80%;
+    margin: auto;
+    padding: 50px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4,ifr);
+    grid-template-rows: repeat(6,150px);
+    grid-template-areas: "img1 img2 img2 img4"
+                         "img1 img2 img2 img4"
+                         "img1 img3 img3 img4"
+                         "img5 img5 img6 img6"
+                         "img5 img5 img6 img6"
+                         "img7 img7 img7 img7";
+}
+
+.galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img1 {
+    grid-area: img1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    text-align: center;
+}
+.img1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.img2 {
+    grid-area: img2;
+}
+.img3 {
+    grid-area: img3;
+}
+.img4 {
+    grid-area: img4;
+}
+.img5 {
+    grid-area: img5;
+}
+.img6 {
+    grid-area: img6;
+}
+.img7 {
+    grid-area: img7;
+}
+
+/* FLEXBOX | EN PESTAÑA PORTFOLIO ;*/
+.contenedor-cuadrados {
+    background-color: hotpink;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.cuadrado {
+    background-color: olivedrab;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* BOOTSTRAP | EN PESTAÑA PORTFOLIO :*/
+.opciones {
+    margin: 30px 0px;
+
+}
+.opciones-opcion {
+    background-color: burlywood;
+    padding: 40px;
+    color:brown;
+    text-align: center;
+    border: 5px;
+    margin: 10px 0px;
+
+}
+
+
+
+/* RESPONSIVE :*/
+@media(max-width: 903px){
+    .navegador-links a{
+        font-size: 17px;
+    }
+    .galeria{
+        width: 100%;
+        padding: 5px;
+    }
+    .tarjetas{
+        margin-bottom: 20px;
+    }
+}
+@media(max-width: 768px){
+    .navegador-links a{
+        font-size: 15px;
+    }
+}
+@media(max-width: 556px){
+    .navegador-links a{
+        font-size: 15px;
+    }
+}
+
