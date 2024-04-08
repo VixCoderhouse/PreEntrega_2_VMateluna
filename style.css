@@ -184,6 +184,11 @@ h3 {
     background-color: rgb(199, 151, 178);
 }
 
+.video {
+    display: flex;
+    margin: 70px;
+}
+
 /* GRIDS | EN PESTAÑA PORTFOLIO :*/
 .galeria {
     width: 80%;
